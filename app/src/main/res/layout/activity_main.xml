@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter number"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        android:textColor="#000"
+        android:typeface="serif"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/num1"
+        android:background="@drawable/design"
+        android:padding="15dp"
+        android:inputType="number"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter number"
+        android:textSize="25sp"
+        android:textColor="#000"
+        android:textStyle="bold|italic"
+        android:typeface="serif"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:padding="15dp"
+        android:id="@+id/num2"
+        android:inputType="number"
+        android:background="@drawable/design"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp">
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25"
+        android:text="add"
+        android:id="@+id/add"
+        android:background="#FFF11010"
+        android:textColor="#ffffff"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="sub"
+            android:id="@+id/sub"
+            android:background="#0a25f2"
+            android:textColor="#fff"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="mul"
+            android:id="@+id/mul"
+            android:background="#06f732"
+            android:textColor="#fff"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="div"
+            android:id="@+id/div"
+            android:background="#07efcc"
+            android:textColor="#fff"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/result"
+        android:layout_marginTop="45dp"
+        android:textColor="#000"
+
+        android:textSize="40sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif"/>
+
+</LinearLayout>
